@@ -1,0 +1,16 @@
+ 2066  npm install crypto-js
+ 2067  wget https://www.dropbox.com/s/szs2eunud49tri7/HLF_144_Election.zip
+ 2068  unzip HLF_144_Election.zip
+ 2069  mv HLF_144_Election/election_chaincode hlf144/chaincode/election
+ 2070  mv HLF_144_Election/election_callingcode hlf144/election
+ 2071  cd hlf144/election
+ 2072  ./launch.sh
+ 2073  cd javascript
+ 2074  npm install --unsafe-perm
+ 2075  npm install grpc --unsafe-perm
+ 2076  node enrollAdmin.js
+ 2077  node registerUser.js
+ 2078  node vote.js
+ 2079  node query.js
+ 2080  node poll.js
+ 2081  history >> execution.txt
